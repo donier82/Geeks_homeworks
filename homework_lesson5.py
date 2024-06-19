@@ -63,17 +63,51 @@
     
 # Проверка подмножества:
 # Напишите функцию, которая проверяет, является ли одно множество подмножеством другого.
+# a = {1,2}
+# b = {1,2,3}
+# isTrue=a.issubset(b) 
+# print(isTrue)
+  
 # Frozenset:
 # Создание frozenset:
 # Создайте frozenset из списка чисел и попробуйте изменить его (вставить новый элемент), чтобы увидеть, что это неизменяемый объект.
+# my_frozenset=frozenset({"3,7,5,8,1,9"})
+# #my_frozenset["12"]
+# try:
+#     my_frozenset[12]
+# except:
+#     print('здесь не работает никаких изменение !')
+# print(my_frozenset)
 # Пересечение frozenset:
+
 # Напишите функцию, которая находит и возвращает пересечение двух frozenset.
+# my_frset1 = frozenset({"Nurgeldi", "Bekbolot", "Ainura","Gulzina"})
+# my_frset2 = frozenset({"Gulzina", "Arsen","Temur"})
+# result_frset=my_frset1.intersection(my_frset2)
+# print(result_frset)
+
 # Сравнение frozenset:
 # Напишите программу, которая сравнивает два frozenset и выводит результат.
+# my_frset1 = frozenset({"Nurgeldi", "Bekbolot", "Ainura","Gulzina"})
+# my_frset2 = frozenset({"Gulzina", "Arsen","Temur"})
+# try: 
+#     my_frset1==my_frset2
+#     print('true')
+# except:
+#     print('False')
+
 # Преобразование frozenset в список:
 # Создайте frozenset и преобразуйте его в список.
+# my_frset= frozenset({"Nurgeldi", "Bekbolot", "Ainura","Gulzina"})
+# my_list=list(my_frset)
+# print(my_list)
+
 # Сложение frozenset:
 # Напишите программу, которая создает новый frozenset, добавляя элементы из двух существующих frozenset.
+# my_frset1 = frozenset({"Nurgeldi", "Bekbolot", "Ainura","Gulzina"})
+# my_frset2 = frozenset({"Gulzina", "Arsen","Temur"})
+# my_frset3=my_frset1.union(my_frset2)
+# print(my_frset3) 
 
 # ДОП задание
 
@@ -81,11 +115,30 @@
 # Индекс в списке:
 
 # 	Создайте список и запросите у пользователя индекс элемента, который он хочет получить. Обработайте исключение, которое может возникнуть при вводе индекса, выходящего за пределы списка.
+# my_list= ["Ош","Бишкек","Чуй","Лондон","Москва","Дубай","Феррари","Ауди","Мерседес","Жентра","Нексия","Ноокат","Араван","Ниссан","Тойота"]
+# try:
+#     user=int(input('введите желаемое индекс списка :'))
+#     num=my_list[user]
+#     print(num)
+# except:
+#     print('такого индекса нету!')
 
 # Конвертация строки в число:
-
 # Запросите у пользователя ввод строки, которую вы затем попробуете преобразовать в целое число. Обработайте исключение, которое может возникнуть, если введенная строка не может быть корректно преобразована в число.
+# try:
+#     verb=input('введите строка :')
+#     my_num=int(verb)
+#     print(my_num)
+# except:
+#     print('не преобразовать строку в число!')
 
 # Работа с словарем:
-
 # Создайте словарь и запросите у пользователя ключ, по которому вы попытаетесь получить значение из словаря. Обработайте исключение, которое может возникнуть, если введенного ключа нет в словаре.
+# my_info={"name":"Donier","age":42,"color":"green"}
+# try:
+#     key=input('введите ключ :')
+#     user=my_info[key]
+#     print(user)
+# except:
+#     print('в словаре такого кляч не существует :')
+
